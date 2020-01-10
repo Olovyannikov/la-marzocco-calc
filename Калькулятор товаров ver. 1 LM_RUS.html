@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Рассчет стоимости оборудования LaMarzocco</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <style type="text/css">
+
+  	body {
+  		font-family: Montserrat;
+  		margin: 20px;
+  	}
+  	label {
+  	vertical-align: 0px;
+  	}
+
+  	.price{
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px;
+    min-height: 200px;
+    border-radius: 5px;
+    max-width: 800px;
+    border: 5px solid #fff200;
+    background:#f9f9f9;
+}
+.calc_title{
+    font-size: 28px;
+    color: #ee1d25;
+    margin: 0 0 20px;
+}
+.result{
+    padding: 20px 0 0;
+    margin: 20px 0;
+    font-size: 24px;
+    border-top: 1px solid #e0e0e0;
+}
+span.total{
+    color: #ed1d25;
+}
+.calculator input[type="text"], select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+select {
+	width: 210px;
+}
+
+.logo {
+    width: 340px; /* Ширина блока */
+    text-align: center; /* Выравнивание сожержимого по центру */
+    float: right; /* Выравнивание по правому краю */
+    /* Интервал (отступ справа) */
+}
+@media all and (max-width: 375px){
+	.price {
+			width: 100%;
+		}
+		h3 {
+			font-size: 1em;
+		}
+	}
+
+address {
+	float: left;
+}
+
+a, address {
+
+	text-decoration: none;
+	color: black;
+	font-style: normal;
+	font-family: monospace;
+ }
+
+ a:hover {
+ 	text-decoration: underline;
+ 	color: #ed1d25;
+ 	font-style: italic;
+ }
+
+ form {
+ 	width: 100%;
+ }
+
+ h3 {
+ 	text-align: center;
+ }
+
+ td {
+ 	vertical-align: top;
+ }
+ </style>
+
+</head>
+
+<body>
+
+	<main class="price">
+<form>
+		<div class="logo">
+		<img src="https://home.lamarzoccousa.com/wp-content/uploads/2014/10/la-marzocco-logo.png">
+		<pre>  Экслюзивный дистрибьютор в России и СНГ</pre>
+	</div>
+  <div class="modules">
+
+<h3>Модель и модификация кофемашины:</h3>
+
+<select name="itemtype" id="f">
+<option value="0"><b>EE</b></option>
+			<option value="0"> - </option>
+      <option value="4549">Linea Mini INOX 1GR EE</option>
+			<option value="4777">Linea Mini COLOR 1GR EE</option>
+			<option value="0"> - </option>
+      <option value="7973">Linea Classic 1 GR EE</option>
+			<option value="9323">Linea Classic 2 GR EE</option>
+			<option value="10655">Linea Classic 3 GR EE</option>
+			<option value="11975">Linea Classic 4 GR EE</option>
+			<option value="0"> - </option>
+      <option value="12209">GB/5 2 GR EE</option>
+			<option value="13619">GB/5 3 GR EE</option>
+			<option value="15017">GB/5 4 GR EE</option>
+			<option value="0"> - </option>
+			<option value="17351">STRADA 2 GR EE</option>
+			<option value="18773">STRADA 3 GR EE</option>
+</select name="itemtype3" id="f">
+
+<select name="itemtype3" id="f">    
+<option value="0"><b>MP</b></option>
+      <option value="7165">GS/3 MP</option>
+      <option value="0"> - </option>
+      <option value="8981">Linea Classic 1 GR MP</option>
+			<option value="10805">Linea Classic 2 GR MP</option>
+			<option value="12629">Linea Classic 3 GR MP</option>
+			<option value="14453">Linea Classic 4 GR MP</option>
+			<option value="0"> - </option>
+      <option value="12677">Linea PB 2 GR MP</option>
+			<option value="14597">Linea PB 3 GR MP</option>
+			<option value="16511">Linea PB 4 GR MP</option>
+			<option value="0"> - </option>
+			<option value="18155">STRADA 2 GR MP</option>
+			<option value="20045">STRADA 3 GR MP</option>
+</select name="itemtype3" id="f"><br>
+
+<select name="itemtype3" id="f">
+<option value="0"><b>AV</b></option>
+      <option value="6901">GS/3 AV</option>
+      <option value="0"> - </option>
+      <option value="8609">Linea Classic 1 GR AV</option>
+			<option value="10577">Linea Classic 2 GR AV</option>
+			<option value="12551">Linea Classic 3 GR AV</option>
+			<option value="14519">Linea Classic 4 GR AV</option>
+			<option value="0"> - </option>
+			<option value="14057">Linea PB 2 GR AV</option>
+			<option value="16511">Linea PB 3 GR AV</option>
+			<option value="18953">Linea PB 4 GR AV</option>
+			<option value="0"> - </option>
+			<option value="14747">GB/5 2 GR AV</option>
+			<option value="17153">GB/5 3 GR AV</option>
+			<option value="19577">GB/5 4 GR AV</option>
+			<option value="0"> - </option>
+			<option value="19100">KB90 2 GR AV</option>
+			<option value="21866">KB90 3 GR AV</option>
+			<option value="24746">KB90 4 GR AV</option>
+			<option value="0"> - </option>
+			<option value="19079">STRADA 2 GR AV</option>
+			<option value="21119">STRADA 3 GR AV</option>
+</select name="itemtype3" id="f">
+
+<select name="itemtype3" id="f">
+<option value="0"><b>EP</b></option>
+			<option value="12431">STRADA 1 GR EP</option>
+			<option value="23344">STRADA 2 GR EP</option>
+			<option value="25242">STRADA 3 GR EP</option>
+</select name="itemtype3" id="f">	<br>
+
+<select name="itemtype3" id="f">
+<option value="0"><b>S</b></option>
+      <option value="16280">LEVA 2 GR S</option>
+			<option value="18446">LEVA 3 GR S</option>
+
+</select name="itemtype3" id="f">
+
+<select name="itemtype3" id="f">
+<option value="0"><b>X</b></option>
+      <option value="13685">LEVA 1 GR X</option>
+      <option value="21338">LEVA 2 GR X</option>
+			<option value="23510">LEVA 3 GR X</option>
+			<option value="0"> - </option>
+			<option value="16013">Linea PB X 2GR</option>
+			<option value="18755">Linea PB X 3GR</option>
+			<option value="19853">Linea PB X 4GR</option>
+</select>
+<select name="itemtype" id="f">
+<option value="0"><b>MODBAR Modules</b></option>
+      <option value="10699.2">Espresso AV</option>
+			<option value="11066.4">Espresso EP</option>
+      <option value="8287.2">Pour-Over</option>
+</select name="itemtype3" id="f">
+
+<select name="itemtype" id="f">
+<option value="0"><b>MODBAR Second Head</b></option>
+      <option value="3729.6">Доп. головная часть AV</option>
+			<option value="7459.2">AV+AV (итого 3 гр)</option>
+      <option value="22132.4">EP+EP (итого 2 гр)</option>
+			<option value="6638.4">Steam Tap</option>
+			<option value="13276.8">Steam + Steam</option>
+			<option value="8287.2">Pour-Over Extra</option>
+</select name="itemtype3" id="f">
+</div>
+		<div class="calculator">
+	
+	<table border="0">		
+		<tr>
+			<td colspan="2" style="padding-bottom: 10px;"><b>Modbar Ext:</b></td>
+		</tr>
+		<tr>
+			<td><label><input type="checkbox" name="itemtype2" id=" ModBar-ABR" value="1872">Система ABR с driptray для гол. части Espresso AV </label>
+</td>
+			<td><label><input type="checkbox" name="itemtype2" id=" +ABR" value="1944">+ABR </label>
+</td>
+		</tr>
+		<tr>
+			<td><label><input type="checkbox" name="itemtype2" id=" Extra-ABR" value="1944">Система ABR для доп. гол. части Espresso AV</label></td>
+			<td><label><input type="checkbox" name="itemtype2" id=" STEAM" value="6638.4"> STEAM </label>
+</td>
+		</tr>
+		<tr>
+			<td><label><input type="checkbox" name="itemtype2" id=" DripTray" value="252">Каплесборник для одной головной части</label>
+</td>
+			<td><label><input type="checkbox" name="itemtype2" id=" STEAM-STEAM" value="13276.8"> STEAM + STEAM </label></td>
+		</tr>
+<tr>
+		<td><label><input type="checkbox" name="itemtype2" id=" DripTray" value="252">Доп. каплесборник</label> </td>
+	</tr>
+
+<tr class="required"> 
+	<td colspan="2" style="padding: 10px 0 10px 0"><b>Высокие ножки:</b></td>
+</tr>
+	<td>	<label><input type="checkbox" name="itemtype2" id="HL" value="198"> Linea Classic </label></td>
+</td>
+</tr>
+<tr>
+	<td>	<label><input type="checkbox" name="itemtype2" id="HL" value="300"> Linea PB, KB90, GB5</label>
+</td>
+</tr>
+
+
+
+	<tr class="required">	
+<td colspan="2" style="padding: 10px 0 10px 0"><b>Подогрев чашек:</b></td>
+	<tr><td><label><input type="checkbox" name="itemtype2" id="Подогрев чашек классика " value="210"> Linea Classic, GB5, Strada</label>
+	</td></tr><tr>
+		<hr><tr class="required">	
+	<td><label><input type="checkbox" name="itemtype2" id="CW" value="480"> Linea PB, KB90, LEVA</label></td></td><tr></p>
+
+<tr class="required">	
+<td><b>Таймер для кофе:</b></td>
+	<tr><td><label><input type="checkbox" name="itemtype2" id="CRONOS" value="174"> CRONOS Classic AV</label></td></td></tr>
+	<tr class="required">
+		<td><label><input type="checkbox" name="itemtype2" id="SHOT TIMER" value="115"> LUMINAR Mini, Classic</label></td>
+		<tr>
+
+<tr class="required">	
+<td style="padding: 10px 0 10px 0;"><b>Подставка для чашки:</b></td>
+</tr>
+<td><label><input type="checkbox" name="itemtype2" id="Подставка для чашки" value="42"> Linea Classic</label></td>
+
+<tr>
+<td style="padding: 10px 0 10px 0;"><b>Подсветка каплесборника:</b></td>
+</tr>
+	<tr class="required"><td><label><input type="checkbox" name="itemtype2" id="Подсветка 1 GR" value="408"> 1 группа</label></td>
+	</tr>
+	<tr class="required">	
+		<td><label><input type="checkbox" name="itemtype2" id="Подсветка 2 GR" value="540"> 2 группы</label></td></tr>
+	<tr class="required">	
+	<td><label><input type="checkbox" name="itemtype2" id="Подсветка 3 GR" value="540"> 3 группы</label></td></tr>
+	<tr class="required">	
+	<td><label><input type="checkbox" name="itemtype2" id="Подсветка 4 GR" value="810"> 4 группы</label></td></td></tr>
+<tr class="required">	
+<td style="padding: 10px 0 10px 0;"><b>Perfomance Touch:</b></td>
+</tr>
+<tr>
+	<td><label><input type="checkbox" name="itemtype2" id="PT" value="768"> Linea PB, GB5, FB80</label></td></tr>
+	<tr>
+<td><label><input type="checkbox" name="itemtype2" id="PT Mini" value="240"> Linea Mini</label></td></td></tr>
+
+<tr class="required">
+<td style="padding: 10px 0 10px 0;"><b>Индивидуальные бойлеры:</b></td>
+</tr>
+	<tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" Multi-Boiler 2GR Classic" value="1224"> 2 GR Linea Classic</label></td></tr></td></tr><tr>
+<td><label><input type="checkbox" name="itemtype2" id=" Multi-Boiler 3GR Classic" value="1716"> 3 GR Linea Classic</label></td></td></tr><tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" Multi-Boiler 2GR GB5" value="624"> 2 GR GB5</label></td></td></tr><tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" Multi-Boiler 3GR GB5" value="1128"> 3 GR GB5</label></td></td></tr>
+
+<tr>
+<td style="padding: 10px 0 10px 0;"><b>Дополнительная помпа:</b></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="itemtype2" id="e" value="600"> Strada, LEVA</label></td></tr>
+
+<tr class="required">
+<td  style="padding: 10px 0 10px 0;"><b>Система ABR:</b></td>
+</tr>
+	<tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" ABR2GR" value="1998"> 2 GR PB, KB90, STRADA</label></td>
+</tr>
+	<tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" ABR3GR" value="2496"> 3 GR PB, KB90, STRADA</label></td>
+</tr>
+	<tr>
+	<td><label><input type="checkbox" name="itemtype2" id=" ABR4GR" value="2748"> 4 GR Linea PB</label></td>
+</tr>
+
+<tr>
+<td style="padding: 10px 0 10px 0;"><b>Модификация AV-X:</b></td>
+<tr>
+<td><label><input type="checkbox" name="itemtype2" id=" AV-X-2GR" value="1896"> 2 GR Linea PB</label></td></td></tr></tr>
+<tr>
+<td><label><input type="checkbox" name="itemtype2" id=" AV-X-3GR" value="2178"> 3 GR Linea PB</label></td></td></tr>
+<tr>
+<td><label><input type="checkbox" name="itemtype2" id=" AV-X-4GR" value="876"> 4 GR Linea PB</label></td></td></tr>
+
+<p><label><input class="label-text" type="text" name="itemtype4" id="g" value="0"> Дополнительная стоимость</p>
+</tbody></table>
+<p class="result"><span class="total">Итого: <output id="price" name="o" for="a b c d e f g">0</output>&nbspевро</span></p>
+<tr><td>
+	<td><p>Модификации:	<input style="width:60%" class="text" type="text"></td></td></tr>
+<br>
+
+		<label><span class="">Скидка в %:&nbsp</span>
+    <input id="discount">
+  </label>
+    <br><br>
+    <label>
+    <button type="button" value="submit" onclick="getPrice()">
+		Нажми для расчета скидки</button></label>
+    <br><br>
+    <label>Цена со скидкой
+    <input style="margin: 0 0px 20px 0;" readonly id="total"></label>
+    
+</form>
+
+<footer>
+	<address style="margin-bottom: 10px;">Create by <a href="http://vk.com/cannibal_corpse" title="Создатель">Olovyannikov Ilya</a> </address>
+	<pre style="text-align: right">Test version 1.01</pre>
+	</footer>
+</main>
+<script>
+        getPrice = function() {
+            var numVal1 = Number(document.getElementById("price").value);
+            var numVal2 = Number(document.getElementById("discount").value) / 100;
+            var totalValue = numVal1 - (numVal1 * numVal2)
+            document.getElementById("total").value = totalValue.toFixed(2);
+
+            return false; 
+        }
+    </script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form'),
+    elem = form.querySelectorAll('[name^="itemtype"]'),
+    output = form.querySelector('output');
+    function total()
+    {
+      output.innerHTML = [].reduce.call( elem, function(sum, el) {
+          var n = (+el.value||0) * (el.checked || el.tagName == "SELECT" || el.type == "text") ;
+          return sum + n 
+       },0);
+    }
+    form.addEventListener('change', total);
+    form.addEventListener('input', total);
+      });
+</script>
+<script>
+var GetValue = (function() {
+  function GetValue() {
+    this.init();
+    this.events();
+  }
+  GetValue.prototype.init = function() {
+  	this.form = document.querySelector('form');
+  	this.textInput = this.form.querySelector('input[class="text"]');
+  	this.checkboxes = [].slice.call(this.form.querySelectorAll('input[type="checkbox"]'));
+  	this.arraySelected = new Array();
+  };
+  GetValue.prototype.events = function() {
+  	return this.checkboxes.forEach((function(_this) {
+  	  return function(el) {
+	      return el.addEventListener('click', function() {
+	        return _this.set(el);
+	      });
+  	  };
+  	})(this));
+  };
+  GetValue.prototype.set = function (el) {
+  	if (this.arraySelected.indexOf(el.id) >= 0) {
+  		this.arraySelected.splice(this.arraySelected.indexOf(el.id), 1);
+  		this.textInput.value = this.arraySelected;
+  	} else {
+  		this.arraySelected.push(el.id)
+  		this.textInput.value = this.arraySelected;
+  	}
+  };
+
+  return GetValue;
+
+})();
+
+new GetValue();
+</script>
+
+
+</body>
+
+</html>
